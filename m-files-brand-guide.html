@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>M-Files — Current Brand Guide (Reference)</title>
+<style>
+  :root{
+    --bg:#fafafa; --card:#ffffff; --ink:#1a1a2e; --sub:#5c5c6e; --line:#e6e6ec;
+    --purple-dark:#5b3aa0; --purple:#7c5cc4; --purple-light:#ab7bed;
+    --grad: linear-gradient(135deg,#ab7bed 0%,#c353be 28%,#ea5891 55%,#f77b77 78%,#f7bb94 100%);
+    --grad-hover: linear-gradient(135deg,#9f6bff 0%,#b845b5 28%,#e94b8b 55%,#f56967 78%,#f6b07c 100%);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.5;}
+  .wrap{max-width:980px;margin:0 auto;padding:56px 32px 96px;}
+  header{margin-bottom:56px;}
+  header h1{font-size:34px;font-weight:700;margin:0 0 8px;letter-spacing:-0.02em;}
+  header p{color:var(--sub);font-size:16px;margin:0;max-width:640px;}
+  .badge{display:inline-block;background:#fff3f0;color:#a23b2e;border:1px solid #f3c9bf;font-size:12px;padding:4px 10px;border-radius:20px;margin-bottom:16px;}
+  section{margin-bottom:56px;}
+  section > h2{font-size:13px;text-transform:uppercase;letter-spacing:0.08em;color:var(--sub);margin:0 0 20px;font-weight:600;}
+  .swatch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px;}
+  .swatch{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card);}
+  .swatch .fill{height:88px;}
+  .swatch .meta{padding:12px 14px;}
+  .swatch .name{font-weight:600;font-size:14px;margin:0 0 2px;}
+  .swatch .hex{font-family:'SF Mono',Consolas,monospace;font-size:12px;color:var(--sub);margin:0;}
+  .swatch .use{font-size:12px;color:var(--sub);margin:6px 0 0;}
+  .gradient-bar{height:80px;border-radius:12px;background:var(--grad);margin-bottom:10px;}
+  .gradient-bar.hover{background:var(--grad-hover);}
+  .stop-list{display:flex;gap:10px;flex-wrap:wrap;font-family:'SF Mono',Consolas,monospace;font-size:12px;color:var(--sub);margin:0 0 24px;}
+  .stop{display:flex;align-items:center;gap:6px;}
+  .stop .dot{width:10px;height:10px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.1);}
+  .type-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 32px;margin-bottom:16px;}
+  .type-card .label{font-size:12px;color:var(--sub);text-transform:uppercase;letter-spacing:0.06em;margin:0 0 6px;}
+  .h-sample{font-weight:700;font-size:36px;letter-spacing:-0.01em;margin:0 0 6px;}
+  .h2-sample{font-weight:600;font-size:22px;margin:0 0 6px;}
+  .body-sample{font-size:16px;color:var(--ink);margin:0;max-width:560px;}
+  .stack-note{font-size:12px;color:var(--sub);margin-top:10px;font-family:'SF Mono',Consolas,monospace;}
+  .btn-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:8px;}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;}
+  .btn-primary{background:var(--purple-dark);color:#fff;}
+  .btn-outline{border:1.5px solid var(--purple-dark);color:var(--purple-dark);}
+  .btn-gradient{background:var(--grad);color:#fff;}
+  .principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+  .principle{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;}
+  .principle h3{font-size:15px;margin:0 0 8px;}
+  .principle p{font-size:13px;color:var(--sub);margin:0;}
+  footer{border-top:1px solid var(--line);padding-top:20px;font-size:12px;color:var(--sub);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="badge">Reference — reconstructed from live site, not an official asset</div>
+    <h1>M-Files — current brand at a glance</h1>
+    <p>A working reference of the colors, type, and UI patterns M-Files uses on m-files.com today, built from their live page source and visual patterns across the site. Use this as the starting point for a refreshed homepage design.</p>
+  </header>
+
+  <section>
+    <h2>Core palette</h2>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="fill" style="background:#3d2a63"></div>
+        <div class="meta">
+          <p class="name">Deep violet</p>
+          <p class="hex">≈ #3D2A63</p>
+          <p class="use">Dark end of brand purple — headings on light bg, footer background</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="fill" style="background:#5b3aa0"></div>
+        <div class="meta">
+          <p class="name">Primary purple</p>
+          <p class="hex">≈ #5B3AA0</p>
+          <p class="use">Core brand purple — logo mark, primary buttons, links</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="fill" style="background:#ab7bed"></div>
+        <div class="meta">
+          <p class="name">Light violet</p>
+          <p class="hex">#AB7BED</p>
+          <p class="use">Extracted directly from site's gradient CTA (0% stop)</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="fill" style="background:#1a1a2e"></div>
+        <div class="meta">
+          <p class="name">Ink / body text</p>
+          <p class="hex">≈ #1A1A2E</p>
+          <p class="use">Near-black navy for headlines and body copy</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="fill" style="background:#5c5c6e"></div>
+        <div class="meta">
+          <p class="name">Muted gray</p>
+          <p class="hex">≈ #5C5C6E</p>
+          <p class="use">Secondary/supporting text</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="fill" style="background:#fafafa;border-bottom:1px solid #eee"></div>
+        <div class="meta">
+          <p class="name">Off-white bg</p>
+          <p class="hex">≈ #FAFAFA / #FFFFFF</p>
+          <p class="use">Page and card backgrounds — clean, light, high whitespace</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Signature gradient (confirmed from source)</h2>
+    <div class="gradient-bar"></div>
+    <div class="stop-list">
+      <span class="stop"><span class="dot" style="background:#ab7bed"></span>#AB7BED 0%</span>
+      <span class="stop"><span class="dot" style="background:#c353be"></span>#C353BE 28%</span>
+      <span class="stop"><span class="dot" style="background:#ea5891"></span>#EA5891 55%</span>
+      <span class="stop"><span class="dot" style="background:#f77b77"></span>#F77B77 78%</span>
+      <span class="stop"><span class="dot" style="background:#f7bb94"></span>#F7BB94 100%</span>
+    </div>
+    <div class="gradient-bar hover"></div>
+    <div class="stop-list">
+      <span class="stop"><span class="dot" style="background:#9f6bff"></span>Hover state — #9F6BFF → #F6B07C</span>
+    </div>
+    <p style="font-size:13px;color:var(--sub);max-width:640px;">This violet-to-coral gradient is used sparingly, on the interactive product-tour CTA — the one moment of real color energy on an otherwise fairly neutral, corporate site. It's the strongest brand asset worth carrying forward.</p>
+  </section>
+
+  <section>
+    <h2>Typography</h2>
+    <div class="type-card">
+      <p class="label">Display / H1</p>
+      <p class="h-sample">Put context-first document management to work.</p>
+      <p class="stack-note">System sans-serif stack — bold weight, tight tracking, no serif anywhere on the site</p>
+    </div>
+    <div class="type-card">
+      <p class="label">Section heading / H2</p>
+      <p class="h2-sample">Meet the M-Files Document Management System</p>
+    </div>
+    <div class="type-card">
+      <p class="label">Body copy</p>
+      <p class="body-sample">When information lives in many systems, context is lost and governance weakens. M-Files connects documents to the people, projects, and work they support.</p>
+      <p class="stack-note">Regular weight, ~16–17px, generous line-height — reads as a standard corporate SaaS sans (Helvetica/Arial/system-UI class), not a distinctive licensed typeface</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Buttons &amp; UI patterns</h2>
+    <div class="type-card">
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#">Get a Demo</a>
+        <a class="btn btn-outline" href="#">View Pricing</a>
+        <a class="btn btn-gradient" href="#">Explore the Product Tour</a>
+      </div>
+      <p class="stack-note" style="margin-top:16px;">Solid purple primary button, outline secondary button, gradient reserved for the one "delight" CTA. Rounded corners (~6px), no drop shadows, no rounded pill shapes.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Observed design principles</h2>
+    <div class="principles">
+      <div class="principle">
+        <h3>Corporate-safe, not expressive</h3>
+        <p>Mostly white/off-white space, navy text, a single restrained purple accent. Reads enterprise-software-trustworthy over bold or playful.</p>
+      </div>
+      <div class="principle">
+        <h3>Proof-heavy above the fold</h3>
+        <p>Review-site logos and star ratings sit right under the hero headline, before any product explanation.</p>
+      </div>
+      <div class="principle">
+        <h3>Logo wall as credibility</h3>
+        <p>"Trusted by 6,000+ organizations" with a scrolling customer-logo strip appears immediately after the hero.</p>
+      </div>
+      <div class="principle">
+        <h3>Repetition-heavy stat blocks</h3>
+        <p>Big number + small label pattern (ROI %, hours saved, systems connected) used to sell outcomes over features.</p>
+      </div>
+      <div class="principle">
+        <h3>Gradient is a treat, not wallpaper</h3>
+        <p>The one gradient element on the whole page is the interactive demo CTA — everything else stays flat and neutral.</p>
+      </div>
+      <div class="principle">
+        <h3>Dense mega-navigation</h3>
+        <p>Deep multi-column dropdown menus (Platform, Solutions, Resources) signal a mature, feature-heavy enterprise product.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Built from m-files.com's live page markup (confirmed gradient values) and consistent visual patterns across the site as of Sep 2026. Treat swatches marked "≈" as close visual approximations rather than pixel-verified hex codes — worth spot-checking against a screenshot before using in production.
+  </footer>
+
+</div>
+</body>
+</html>
